@@ -33,17 +33,3 @@ jobs:
           external_repository: iati-data-access/data-en
           publish_dir: ./output/xlsx/en
           force_orphan: true
-      - name: Deploy FR
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          external_repository: iati-data-access/data-fr
-          publish_dir: ./output/xlsx/fr
-          force_orphan: true
-      - name: Deploy ES
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          external_repository: iati-data-access/data-es
-          publish_dir: ./output/xlsx/es
-          force_orphan: true

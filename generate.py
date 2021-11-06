@@ -5,7 +5,7 @@ from iatiflattener.group_data import GroupFlatIATIData
 from iatiflattener.data_quality import report as data_quality_report
 
 if __name__ == "__main__":
-    langs = ['en', 'fr', 'es']
+    langs = ['en']
     iatikit.download.data()
     os.makedirs('output/csv/', exist_ok=True)
     FlattenIATIData(refresh_rates=True,
