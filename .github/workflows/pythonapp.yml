@@ -3,7 +3,7 @@ name: Generate flattened IATI data
 on:
   push:
     branches:
-      - main
+      - data-en
   schedule:
     - cron:  '0 */3 * * *'
 jobs:
