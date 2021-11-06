@@ -26,10 +26,9 @@ jobs:
       - name: Generate data
         run: |
           python generate.py
-      - name: Deploy EN
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          external_repository: iati-data-access/data-en
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output/xlsx/en
           force_orphan: true
