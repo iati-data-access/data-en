@@ -10,6 +10,7 @@ if __name__ == "__main__":
     os.makedirs('output/csv/', exist_ok=True)
     FlattenIATIData(refresh_rates=True,
         langs=langs)
+    shutil.rmtree('__iatikitcache__')
     GroupFlatIATIData(langs=langs)
     #data_quality_report()
     shutil.rmtree('output/csv/')
