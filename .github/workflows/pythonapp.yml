@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - data-en
-  schedule:
-    - cron:  '0 1/3 * * *'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
